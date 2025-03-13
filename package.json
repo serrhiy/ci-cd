@@ -1,0 +1,15 @@
+{
+  "main": "src/math.js",
+  "scripts": {
+    "test": "npm run -s lint && node --test",
+    "lint": "eslint . && prettier -c \"**/*.js\" \"**/*.json\"",
+    "fix": "eslint . --fix && prettier --write \"**/*.js\" \"**/*.json\""
+  },
+  "devDependencies": {
+    "eslint": "^9.10.0",
+    "eslint-config-metarhia": "^9.1.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "prettier": "^3.3.3"
+  }
+}
